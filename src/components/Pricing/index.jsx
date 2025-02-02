@@ -88,8 +88,8 @@ const Button = styled(motion.button)`
 `;
 
 const cardVariants = {
-  hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0 }
+  hidden: { opacity: 0, y: 50, rotateY: -90 },
+  visible: { opacity: 1, y: 0, rotateY: 0, transition: { duration: 0.8, ease: "easeInOut" } }
 };
 
 const Pricing = () => {
